@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment</title>
+    <style>
+
+      .titulo {
+        text-align: center;
+        margin-top: 250px;
+        color: #0c0c0c;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        background-color: linear-gradient(to bottom, #2e557c, #e8f795);
+        border: 1px solid #b6cef3;
+        border-radius: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+      }
+
+      nav li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+        background-color: #faf7cb;
+        border: 1px solid #dfc3c3;
+        border-radius: 3px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #555;
+        color: #fff;
+      }
+
+      .entertainment-body { 
+        background: linear-gradient(to bottom, #001f3f, #e8f795);
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+
+      .limage-container {
+        text-align: center;
+      }
+
+      .limage-container img {
+        max-width: auto;
+        height: auto;
+        margin-bottom: 25px;
+      }
+
+      .limage-container h2 {
+        font-size: 24px;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Serif&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="entertainment-body">
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="acommodation.html">Accommodation</a></li>
+      <li><a href="visit_activities.html">Visits & Activities</a></li>
+      <li><a href="entertainment.html">entertainment</a></li>
+      <li><a href="form.html">Contacto</a></li>
+    </ul>
+  </nav>
+    <h1 class="brillo titulo">Entretenimiento</h1>
+
+    <div class="limage-container">
+        <a href="cines.html">
+            <img src="cine2.jpg" alt="Cine">
+            <h2>Cine</h2>
+        </a>
+    </div>
+
+    <div class="limage-container">
+        <img src="bar1.jpg" alt="Bares">
+        <h2>Bares</h2>
+    </div>
+
+    <div class="limage-container">
+        <a href="teatros.html">
+            <img src="teatros.jpg" alt="Teatros">
+            <h2>Teatros</h2>
+        </a>
+    </div>
+</body>
+</html>

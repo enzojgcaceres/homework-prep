@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body {
+        background: linear-gradient(to bottom, #001f3f, #e8f795);
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: linear-gradient(to bottom, #2e557c, #e8f795);
+        border: 1px solid #b6cef3;
+        border-radius: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+      
+     .contactooo {
+        text-align: center;
+        margin-top: 150px;
+        color: #0c0c0c;
+    }
+
+     .formulario {
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: transparent;
+    }
+
+     
+     .campo {
+        display: grid;
+        grid-template-columns: 100px 1fr; /* Tamaño de la columna del label y del input/textarea */
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #ccc; /* Línea inferior para delimitar las cajas */
+        resize: none; /* Para evitar que el textarea sea redimensionado por el usuario */
+        outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-bottom: 1px solid #555; /* Estilo cuando el input o textarea está enfocado */
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .campo:last-child {
+        grid-template-columns: 1fr; /* Tamaño de una única columna */
+        text-align: center; /* Alinear el botón al centro horizontalmente */
+    }
+
+    .campo:last-child input[type="submit"] {
+        margin: 0 auto; 
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Serif&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="acommodation.html">Accommodation</a></li>
+          <li><a href="visit_activities.html">Visits & Activities</a></li>
+          <li><a href="entertainment.html">entertainment</a></li>
+        </ul>
+      </nav>
+    <main class="formulario">
+        <h1 class="contactooo">Formulario de contacto</h1>
+        <form method="post" action="mailto:enzojgcaceres@gmail.com">
+            <div class="campo">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    
+    
+</body>
+</html>
